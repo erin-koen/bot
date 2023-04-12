@@ -1,18 +1,6 @@
-query VaultDetails($id: ID!) {
-  vault(id: $id) {
-    id
-    name
-    trackedAssets {
-      id
-      name
-      decimals
-      symbol
-    }
-    release {
-      id
-    }
-    comptroller {
-      id
-    }
+query Spaces {
+  proposals(first: 1000, where: { space: "uniswap" }) {
+    author
+    snapshot
   }
 }

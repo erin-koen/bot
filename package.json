@@ -9,7 +9,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon --quiet --require dotenv-extended/config src/index.ts",
+    "dev": "cross-env NODE_ENV=development nodemon --quiet --require dotenv-extended/config src/snapshot.ts",
     "debug": "cross-env NODE_ENV=development nodemon --quiet --inspect=4321 --require dotenv-extended/config  src/index.ts",
     "codegen": "dotenv -- graphql-codegen --config codegen.yaml"
   },
